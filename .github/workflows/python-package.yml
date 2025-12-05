@@ -41,4 +41,4 @@ jobs:
         python setup.py sdist
     - name: Publish package
       run: |
-        python -m twine upload --repository-url https://api.github.com/orgs/${{ github.repository_owner }}/packages/pypi/upload sdist/*
+        python -m twine upload --repository-url https://api.github.com/orgs/${{ github.repository_owner }}/packages/pypi/upload dist/*
